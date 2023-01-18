@@ -155,19 +155,14 @@ const routes = [
     component: () => import('../views/PlatformPage'),
     children: [
       {
-        path: 'video',
-        name: 'PlatformVideo',
-        component: () => import('../views/PlatformVideo')
-      },
-      {
-        path: 'text',
-        name: 'PlatformText',
-        component: () => import('../views/PlatformText')
-      },
-      {
         path: 'home',
         name: 'PlatformHome',
         component: () => import('../views/PlatformHome')
+      },
+      {
+        path: 'data',
+        name: 'PlatformData',
+        component: () => import('../views/PlatformData')
       }
     ]
   },

@@ -1,1 +1,0 @@
-<template></template><script>export default {    name: 'PlatformText',}</script><style scoped></style>
