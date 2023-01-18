@@ -1,0 +1,1 @@
+<template></template><script>export default {    name: 'PlatformVideo',}</script><style scoped></style>

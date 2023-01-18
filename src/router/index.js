@@ -148,6 +148,29 @@ const routes = [
     name: 'WatchLaterPage',
     component: () => import('../views/WatchLaterPage')
   },
+  {
+    path: '/platform',
+    name: 'PlatformPage',
+    redirect: '/platform/home',
+    component: () => import('../views/PlatformPage'),
+    children: [
+      {
+        path: 'video',
+        name: 'PlatformVideo',
+        component: () => import('../views/PlatformVideo')
+      },
+      {
+        path: 'text',
+        name: 'PlatformText',
+        component: () => import('../views/PlatformText')
+      },
+      {
+        path: 'home',
+        name: 'PlatformHome',
+        component: () => import('../views/PlatformHome')
+      }
+    ]
+  },
 ]
 
 const router = createRouter({
