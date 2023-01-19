@@ -160,9 +160,32 @@ const routes = [
         component: () => import('../views/PlatformHome')
       },
       {
-        path: 'data',
+        path: 'dataCenter',
         name: 'PlatformData',
-        component: () => import('../views/PlatformData')
+        redirect: '/platform/dataCenter/video',
+        component: () => import('../views/PlatformData'),
+        children: [
+          {
+            path: 'video',
+            name: 'VideoData',
+            component: () => import('../views/VideoData')
+          },
+          {
+            path: 'play',
+            name: 'PlayData',
+            component: () => import('../views/PlayData')
+          },
+          {
+            path: 'audience',
+            name: 'AudienceData',
+            component: () => import('../views/AudienceData')
+          },
+          {
+            path: 'read',
+            name: 'ReadData',
+            component: () => import('../views/ReadData')
+          },
+        ]
       }
     ]
   },
