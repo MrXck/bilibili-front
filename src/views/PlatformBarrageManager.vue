@@ -1,0 +1,1 @@
+<template></template><script>export default {    name: 'PlatformBarrageManager',}</script><style scoped></style>

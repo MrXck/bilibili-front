@@ -186,7 +186,17 @@ const routes = [
             component: () => import('../views/ReadData')
           },
         ]
-      }
+      },
+      {
+        path: 'comment',
+        name: 'PlatformCommentManager',
+        component: () => import('../views/PlatformCommentManager')
+      },
+      {
+        path: 'barrage',
+        name: 'PlatformBarrageManager',
+        component: () => import('../views/PlatformBarrageManager')
+      },
     ]
   },
 ]
